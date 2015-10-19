@@ -1,0 +1,72 @@
+/**
+ * Copyright (c) 2015 Michael Winkler & Philip Parvaneh
+ */
+
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  max-width: 700px;
+  width: 98%;
+}
+
+body {
+  border: 2px solid blue;
+}
+
+header, main, footer {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+footer {
+  border-top: 2px solid blue;
+  margin-top: 1em;
+}
+
+h1 {
+  color: blue;
+}
+
+input {
+  margin-bottom: .3em;
+  width: 18em; 
+}
+
+.small-screen {
+  display: none;
+  height:auto;
+}
+
+#calculate {
+  width: 7em;
+}
+
+#flexible{
+  display: flex;
+  justify-content: center;
+}
+
+#labels{
+  line-height: 1.5;
+  margin-right: 1em;
+  text-align: right;
+}
+
+#result-labels{
+  margin-right: 1em;
+  text-align: right;
+}
+
+@media screen and (max-width: 400px){
+  .large-screen{
+    display: none;
+  }
+  
+  .small-screen {
+    display: inline;
+  }
+  
+  #labels {
+    text-align: left;
+  }
+}
