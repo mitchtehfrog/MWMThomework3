@@ -25,7 +25,7 @@ public class AppController extends HttpServlet {
   protected void doPost(HttpServletRequest request, HttpServletResponse response)
           throws ServletException, IOException {
     
-    String url = "/index.html";
+    String url = "/index.jsp";
     String action = request.getParameter("action");
     if (action != null){
       url = "/result.jsp";

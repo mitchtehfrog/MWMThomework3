@@ -14,10 +14,10 @@ Copyright (c) 2015 Michael Winkler & Philip Parvaneh
         </div>
         <div>
           <jsp:useBean id="futureValue" scope="request" class="edu.elon.business.FutureValue"/>
-          $<jsp:getProperty name="futureValue" property="investmentAmount"/><br>
+          <jsp:getProperty name="futureValue" property="formattedInvestmentAmount"/><br>
           <jsp:getProperty name="futureValue" property="yearlyInterestRate"/><br>
           <jsp:getProperty name="futureValue" property="numOfYears"/><br>
-          $<jsp:getProperty name="futureValue" property="futureValue"/><br>
+          <jsp:getProperty name="futureValue" property="formattedFutureValue"/><br>
         </div>
       </div>
     </main>

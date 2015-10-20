@@ -4,6 +4,7 @@
 package edu.elon.business;
 
 import java.io.Serializable;
+import java.text.NumberFormat;
 public class FutureValue implements Serializable{
   
   private double investmentAmount;
@@ -66,5 +67,15 @@ public class FutureValue implements Serializable{
   
   public void setFutureValue(double futureValue){
     this.futureValue = futureValue;
+  }
+  
+  public String getFormattedInvestmentAmount(){
+    NumberFormat currency = NumberFormat.getCurrencyInstance();
+    return currency.format(investmentAmount);
+  }
+  
+  public String getFormattedFutureValue(){
+    NumberFormat currency = NumberFormat.getCurrencyInstance();
+    return currency.format(futureValue);
   }
 }
