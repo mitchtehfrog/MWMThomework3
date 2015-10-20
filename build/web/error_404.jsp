@@ -1,5 +1,7 @@
-
 <%@ include file="/includes/header.html" %>
+<!--
+Copyright (c) 2015 Michael Winkler & Philip Parvaneh
+-->
 <body>
   <main>
     <h1>404 Error</h1>

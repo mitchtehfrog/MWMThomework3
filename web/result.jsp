@@ -1,7 +1,7 @@
-<!--
-Copyright (c) 2015 Michael Winkler & Philip Parvaneh
--->
 <%@ include file="/includes/header.html" %>
+  <!--
+  Copyright (c) 2015 Michael Winkler & Philip Parvaneh
+  -->
   <body>
     <main>
       <h1>Future Value Calculator</h1>
