@@ -11,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @WebServlet(name = "AppController", urlPatterns = {"/calculate"})
 public class AppController extends HttpServlet {
@@ -27,6 +28,7 @@ public class AppController extends HttpServlet {
     
     String url = "/index.jsp";
     String action = request.getParameter("action");
+    HttpSession session = request.getSession();
     if (action != null){
       url = "/result.jsp";
       double investmentAmount;
@@ -43,9 +45,16 @@ public class AppController extends HttpServlet {
         yearlyInterestRate = Double.parseDouble(request.getParameter("interestRateLarge"));
         numOfYears = Integer.parseInt(request.getParameter("yearsLarge"));
       }
-      FutureValue futureValue = new FutureValue(investmentAmount, yearlyInterestRate, numOfYears);
       
-      request.setAttribute("futureValue", futureValue);
+      FutureValue[] futureValues = new FutureValue[numOfYears];
+      for (int i = 0; i < numOfYears; i++){
+        futureValues[i] = new FutureValue (investmentAmount, yearlyInterestRate, i+1);
+      }
+      request.setAttribute("futureValues", futureValues);
+      
+      FutureValue futureValue = new FutureValue(investmentAmount, yearlyInterestRate, numOfYears);
+      session.setAttribute("lastEntry", futureValue);
+      
     }  
   
   getServletContext().getRequestDispatcher(url).forward(request, response);

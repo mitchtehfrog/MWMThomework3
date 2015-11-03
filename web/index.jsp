@@ -16,9 +16,9 @@
           <input type="submit" value="Calculate" class="calculate small-screen">
         </div>       
         <div class = "large-screen">
-          <input name="investmentAmountLarge" type="text" pattern="[0-9]*"><br>
-          <input name="interestRateLarge" type="text" pattern="[0-9]*"><br>
-          <input name="yearsLarge" placeholder="Integer number of years" type="number" min="0" step="1"><br>
+          <input name="investmentAmountLarge" type="text" pattern="[0-9]*" value="${lastEntry.investmentAmount}"><br>
+          <input name="interestRateLarge" type="text" pattern="[0-9]*" value="${lastEntry.yearlyInterestRate}"><br>
+          <input name="yearsLarge" placeholder="Integer number of years" type="number" min="0" step="1" value = ${lastEntry.numOfYears}><br>
           <input type="submit" value="Calculate" class="calculate">
         </div>
       </form>
