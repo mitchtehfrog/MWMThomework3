@@ -16,7 +16,8 @@
         </div>
         
         <div>
-            <elon:currencyFormat futureValue="${lastEntry.investmentAmount}" /><br>
+            <elon:currencyFormat futureValue="${lastEntry.investmentAmount}" />
+            <br>
             ${lastEntry.yearlyInterestRate}<br>
             ${lastEntry.numOfYears}<br>
         </div>
@@ -24,12 +25,15 @@
             
       </div>
         <div id="yearcurrency">
-            <strong>Year</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Value:</strong>  
+            <strong>Year</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <strong>Value:</strong>  
         </div>
         
       <div>
         <c:forEach var="item" items="${futureValues}">
-            &nbsp;&nbsp;${item.numOfYears}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<elon:currencyFormat futureValue ="${item.futureValue}"/><br>
+            &nbsp;&nbsp;${item.numOfYears}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <elon:currencyFormat futureValue ="${item.futureValue}"/><br>
         </c:forEach> 
       </div>
       
