@@ -6,5 +6,15 @@
   <tag>
     <name>currencyFormat</name>
     <tagclass>edu.elon.tags.CurrencyFormatTag</tagclass>
+    <attribute>
+        <name>years</name>
+        <rtexprvalue>true</rtexprvalue>
+        <type>int</type>
+    </attribute>
+    <attribute>
+        <name>futureValue</name>
+        <rtexprvalue>true</rtexprvalue>
+        <type>double</type>
+    </attribute>
   </tag>
 </taglib>
