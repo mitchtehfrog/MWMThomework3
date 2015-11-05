@@ -69,4 +69,10 @@ input {
   #labels {
     text-align: left;
   }
+  
+  #yearcurrency{
+    float: left;
+    margin-right: 5em;
+  }
+  
 }

@@ -14,6 +14,7 @@
           <label>Number of Years:</label><br>
           <a href ="index.jsp">Return to Calculator</a>
         </div>
+        
         <div>
             <elon:currencyFormat futureValue="${lastEntry.investmentAmount}" /><br>
             ${lastEntry.yearlyInterestRate}<br>
@@ -22,17 +23,16 @@
        
             
       </div>
+        <div id="yearcurrency">
+            <strong>Year</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Value:</strong>  
+        </div>
+        
       <div>
         <c:forEach var="item" items="${futureValues}">
-          ${item.numOfYears}<br>
+            &nbsp;&nbsp;${item.numOfYears}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<elon:currencyFormat futureValue ="${item.futureValue}"/><br>
         </c:forEach> 
       </div>
-      <div>
-        <c:forEach var="item" items="${futureValues}">
-          <elon:currencyFormat futureValue ="${item.futureValue}"/><br>
-          
-        </c:forEach>
-      </div> 
+      
     </main>
   <%@ include file="/includes/footer.html" %>
 
