@@ -21,11 +21,12 @@
         </div>       
         <div class = "large-screen">
           <input name="investmentAmountLarge" type="text" pattern="[0-9]*"
-                 value="${lastEntry.investmentAmount}"><br>
+                 value="${lastEntry.investmentAmount}" required><br>
           <input name="interestRateLarge" type="text" pattern="[0-9]*" 
-                 value="${lastEntry.yearlyInterestRate}"><br>
+                 value="${lastEntry.yearlyInterestRate}" required><br>
           <input name="yearsLarge" placeholder="Integer number of years" 
-                 type="number" min="0" step="1" value = ${lastEntry.numOfYears}>
+                 type="number" min="0" step="1" value = "${lastEntry.numOfYears}"
+                 required>
           <br>
           <input type="submit" value="Calculate" class="calculate">
         </div>
