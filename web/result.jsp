@@ -31,8 +31,8 @@
         
       <div id="entries">
         <c:forEach var="item" items="${futureValues}">
-            &nbsp;&nbsp;${item.numOfYears}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${item.numOfYears}&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <elon:currencyFormat futureValue ="${item.futureValue}"/><br>
         </c:forEach> 
       </div>
