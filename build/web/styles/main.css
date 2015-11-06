@@ -71,8 +71,8 @@ input {
   }
   
   #yearcurrency{
-    float: left;
-    margin-right: 5em;
+    margin-right: 0em;
+    text-align: center;
   }
   
 }

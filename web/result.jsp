@@ -26,7 +26,7 @@
       </div>
         <div id="yearcurrency">
             <strong>Year</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <strong>Value:</strong>  
+            <strong>Value:</strong>  <br>
         </div>
         
       <div>
