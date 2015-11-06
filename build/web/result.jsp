@@ -12,7 +12,7 @@
           <label>Investment Amount:</label><br>
           <label>Yearly Interest Rate:</label><br>
           <label>Number of Years:</label><br>
-          <a href ="index.jsp">Return to Calculator</a>
+          <a id="goback" href ="index.jsp">Return to Calculator</a>
         </div>
         
         <div>
@@ -29,7 +29,7 @@
             <strong>Value:</strong>  <br>
         </div>
         
-      <div>
+      <div id="entries">
         <c:forEach var="item" items="${futureValues}">
             &nbsp;&nbsp;${item.numOfYears}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;

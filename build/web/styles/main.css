@@ -57,6 +57,16 @@ input {
   text-align: right;
 }
 
+#yearcurrency{
+    margin-right: 0em;
+    text-align: center;
+  }
+  
+  #entries{
+      text-align: center;
+  }
+  
+
 @media screen and (max-width: 400px){
   .large-screen{
     display: none;
@@ -70,9 +80,6 @@ input {
     text-align: left;
   }
   
-  #yearcurrency{
-    margin-right: 0em;
-    text-align: center;
-  }
+ 
   
 }
